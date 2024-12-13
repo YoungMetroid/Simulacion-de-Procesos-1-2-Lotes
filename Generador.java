@@ -1,5 +1,6 @@
 package com.elizalde.simulacion;
 
+import java.security.SecureRandom;
 import java.util.Random;
 import java.util.Vector;
 
@@ -19,20 +20,20 @@ public class Generador {
 		procesos = Integer.parseInt(s);
 		for (int i = 0; i < procesos; i++) {
 			copyID = new Vector<String>();
-			Random randomGenerator = new Random();
+			Random randomGenerator = new SecureRandom();
 
 			int var1;
 			var1 = randomGenerator.nextInt(10 - 01 + 1) + 01;
 
-			randomGenerator = new Random();
+			randomGenerator = new SecureRandom();
 			int var2;
 			var2 = randomGenerator.nextInt(10 - 01 + 1) + 01;
 
-			randomGenerator = new Random();
+			randomGenerator = new SecureRandom();
 			int time;
 			time = randomGenerator.nextInt(10 - 01 + 1) + 01;
 
-			randomGenerator = new Random();
+			randomGenerator = new SecureRandom();
 			int op;
 			op = randomGenerator.nextInt(5 - 01 + 1) + 01;
 			String operation;
